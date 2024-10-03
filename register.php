@@ -30,3 +30,22 @@
     }
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register User</title>
+</head>
+<body>
+    <h2>Register User</h2>
+    <form method="post" action="register.php">
+        <input type="text" placeholder="Username" name="username"> <br /><br />
+        <input type="password" placeholder="Password" name="password"> <br /><br />
+        <input type="submit" value="Register">
+    </form>
+    <p> <?php echo $message ?> </p>
+    <a href="login.php">Already have an Account? Please Login</a>
+</body>
+</html>
